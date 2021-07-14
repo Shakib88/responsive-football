@@ -1,0 +1,165 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;&display=swap');
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #ffff;
+}
+.button img:hover{
+  margin-right: 10px;
+  transition: .3s;
+}
+
+.button{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 27px;
+  background-color: #e02c6d;
+  height: 40px;
+  width: 168px;
+}
+
+
+.header{
+  background-color: #2D25A0;
+}
+.header-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 457px;
+  margin: 0 auto;
+  padding: 86px 124px 86px 156px;
+
+}
+
+.title h4{
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 80px;
+}
+.banner img:hover{
+  transform: scale(1.1)rotate(360deg);
+  transition: 5s;
+}
+
+
+/*---players--*/
+
+.pleayer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.image-banner img{
+  width: 100%; 
+}
+
+.pleayers{
+  width: 80%;
+  margin: 0 auto;
+}
+.image-banner{
+  box-shadow: 0 0 5px 5px #ccc;
+}
+
+ /*--sponsor club-- */
+
+  .club-brand{
+    padding-bottom: 50px;
+}
+h2.section-title {
+  font-size: 60px;
+  color: #0A0826;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clubs{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap:40px;
+}
+.single-club img{
+  width: 100%;
+  height: 170px;
+  box-shadow: 15px 10px 15px #ddd;
+  border: 4px solid red
+}
+hr{
+  border: 1px solid red
+}
+
+
+/*--next match-*/
+.match-area{
+  background: #892ce0;
+  padding: 20px 0 70px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  }
+.match-area h2.section-title{color: #fff;}
+
+.matches{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  }
+
+.single-team img {
+   width: 250px;
+   height: 200px;
+   border: 3px solid #fff;
+   border-radius: 5px;
+   box-shadow: 3px 5px 10px #333;
+   margin-left: 70px;
+  }
+
+.match-details{
+   text-align: center;
+  }
+
+.match-details h3{
+   font-size: 50px;
+   color: #fff;
+  }
+
+.match-details p{
+   font-size: 18px;
+   margin-top: -50px;
+   color: #fff;
+}
+  
+
+/*--footer*/
+
+.footer-area{
+   padding:30px 0;
+   text-align: center;
+  }
+
+.footer-logo img{
+    width: 450px;
+    height: 110px;
+  }
+
+.footer-social i{
+    width: 25px;
+    height: 20px;
+    color: #969BAB;
+    background-color: #E7E7E8;
+    padding: 10px;
+    border-radius: 30px;
+    line-height: 20px;
+  }
+
+
+
