@@ -4,53 +4,89 @@
 
 body{
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #6C6C6C;
 }
 
-a{
-  text-decoration: none;
-  color: #ffff;
+.container-full{
+  width: 1170px;
+    margin: 0 auto;
 }
-.button img:hover{
-  margin-right: 10px;
-  transition: .3s;
-}
-
-.button{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 27px;
-  background-color: #e02c6d;
-  height: 40px;
-  width: 168px;
+.container{
+  width: 1100px;
+  margin: 0 auto
 }
 
-
-.header{
-  background-color: #2D25A0;
+/*-------------
+header area styles 
+----------------------*/
+.header-area{
+    background-color: #2D25A0;
+    color: #fff;
 }
-.header-main{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1143px;
-  height: 456px;
-  margin: 0 auto;
-  padding: 86px 124px 86px 156px;
+.header-top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-top-bar .menu li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 40px 0;
+    margin-right: 35px;
+}
+.header-top-bar .menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+/* -----button styles------- */
+.login,.common-btn{
+    background-color: #E02C6D;
+    padding: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 1px;
+    border: 3px solid transparent;
+    transition: .3s;
 
 }
-
-.title h4{
-  font-size: 64px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 80px;
+.login i{
+    margin-right: 10px;
+    transition: .3s;
 }
-.banner img:hover{
-  transform: scale(1.1)rotate(360deg);
-  transition: 5s;
+.login:hover i{margin-right: 20px;}
+.common-btn:hover,.login:hover{
+    background-color:transparent;
+    border: 3px solid #E02C6D;
+}
+.common-btn i{
+    margin-left: 10px;
+    transition: .3s;
+  }
+.common-btn:hover i{
+    margin-left: 20px;
 }
 
+.hero-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.hero-text h1{
+    font-size: 64px;
+}
+.hero-bg img{
+    width: 550;
+    height: 440px;
+    transition: .3s;
+}
+.hero-bg:hover img{
+    transform: scale(1.2)translateY(40px);
+}
 
 /*---players--*/
 
@@ -159,6 +195,79 @@ hr{
     padding: 10px;
     border-radius: 30px;
     line-height: 20px;
+  }
+
+/*--- Media Queries--*/
+
+  /* media query styles */
+
+    /* mobile device */
+    @media only screen and (max-width: 600px) {
+      .header-main{
+          width: 100%;
+          overflow: hidden;
+      }
+      .pleayers{
+          width: 100%;
+          overflow: hidden;
+      }
+      h2.section-title {
+          font-size: 40px;
+      }
+      .header-top-bar{
+          display: none;
+      }
+      .hero-area{
+          display: block;
+          padding: 30px;
+      }
+      .hero-text h1{
+          font-size: 40px;
+      }
+      .hero-area .common-btn{
+          margin-bottom: 20px;
+      }
+      .hero-bg img{
+          width: 350px;
+          height: 250px;
+      }
+      .players{
+          grid-template-columns: repeat(1,1fr);
+      }
+      .course-info h3{
+          font-size: 20px;
+      }
+      .player-img img{
+          width: 100%;
+      }
+      .matches{
+          grid-template-columns: repeat(1,1fr);
+      }
+      .single-team{
+          margin: auto;
+      }
+      .highlights{
+          grid-template-columns: repeat(1,1fr);
+      }
+      .highlight-details{
+          padding: 20px;
+      }
+      .highlight-details h2{
+          font-size: 35px;
+      }
+      .highlight-banner img{
+          margin-top: 20px;
+      }
+      .clubs{
+          grid-template-columns: repeat(2,1fr);
+          grid-row-gap:20px;
+      }
+      .footer-logo img{
+          width: 350px;
+          height: 90px;
+      }
+
+
   }
 
 
